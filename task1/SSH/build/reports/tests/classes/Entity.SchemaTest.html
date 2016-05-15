@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Entity.SchemaTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Entity.SchemaTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/Entity.html">Entity</a> &gt; SchemaTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.064s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testHibernate_spring</td>
+<td>4.064s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2016-05-15 20:40:23,253 -Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1d58dbf2: startup date [Sun May 15 20:40:23 CST 2016]; root of context hierarchy -INFO  -org.springframework.context.support.ClassPathXmlApplicationContext:578 -[Test worker:0ms]
+ 2016-05-15 20:40:23,319 -Loading XML bean definitions from class path resource [applicationContext-hibernate.xml] -INFO  -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317 -[Test worker:66ms]
+ 2016-05-15 20:40:23,569 -Loading XML bean definitions from class path resource [applicationContext-struts2.xml] -INFO  -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317 -[Test worker:316ms]
+ 2016-05-15 20:40:23,596 -Loading XML bean definitions from class path resource [applicationContext.xml] -INFO  -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317 -[Test worker:343ms]
+ 2016-05-15 20:40:23,621 -Loading XML bean definitions from class path resource [applicationContext-prop.xml] -INFO  -org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317 -[Test worker:368ms]
+ 2016-05-15 20:40:23,810 -Loading properties file from class path resource [conn.properties] -INFO  -org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172 -[Test worker:557ms]
+ 2016-05-15 20:40:23,811 -Loading properties file from class path resource [public.properties] -INFO  -org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172 -[Test worker:558ms]
+ 2016-05-15 20:40:24,134 -MLog clients using log4j logging. -INFO  -com.mchange.v2.log.MLog:80 -[Test worker:881ms]
+ 2016-05-15 20:40:24,389 -Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] -INFO  -com.mchange.v2.c3p0.C3P0Registry:204 -[Test worker:1136ms]
+ 2016-05-15 20:40:24,841 -HHH000412: Hibernate Core {5.1.0.Final} -INFO  -org.hibernate.Version:37 -[Test worker:1588ms]
+ 2016-05-15 20:40:24,844 -HHH000206: hibernate.properties not found -INFO  -org.hibernate.cfg.Environment:213 -[Test worker:1591ms]
+ 2016-05-15 20:40:24,846 -HHH000021: Bytecode provider name : javassist -INFO  -org.hibernate.cfg.Environment:317 -[Test worker:1593ms]
+ 2016-05-15 20:40:24,906 -HCANN000001: Hibernate Commons Annotations {5.0.1.Final} -INFO  -org.hibernate.annotations.common.Version:66 -[Test worker:1653ms]
+ 2016-05-15 20:40:25,428 -Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -&gt; 3, acquireRetryAttempts -&gt; 0, acquireRetryDelay -&gt; 1000, autoCommitOnClose -&gt; false, automaticTestTable -&gt; Test, breakAfterAcquireFailure -&gt; false, checkoutTimeout -&gt; 3000, connectionCustomizerClassName -&gt; null, connectionTesterClassName -&gt; com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -&gt; 1hgecjl9g1e2a6vunzj5gq|19d9fd88, debugUnreturnedConnectionStackTraces -&gt; false, description -&gt; null, driverClass -&gt; com.mysql.jdbc.Driver, factoryClassLocation -&gt; null, forceIgnoreUnresolvedTransactions -&gt; false, identityToken -&gt; 1hgecjl9g1e2a6vunzj5gq|19d9fd88, idleConnectionTestPeriod -&gt; 60, initialPoolSize -&gt; 2, jdbcUrl -&gt; jdbc:mysql://localhost:3306/ssh?useUnicode=true&amp;amp;characterEncoding=UTF-8, maxAdministrativeTaskTime -&gt; 0, maxConnectionAge -&gt; 0, maxIdleTime -&gt; 60, maxIdleTimeExcessConnections -&gt; 0, maxPoolSize -&gt; 20, maxStatements -&gt; 100, maxStatementsPerConnection -&gt; 0, minPoolSize -&gt; 2, numHelperThreads -&gt; 3, numThreadsAwaitingCheckoutDefaultUser -&gt; 0, preferredTestQuery -&gt; null, properties -&gt; {user=******, password=******}, propertyCycle -&gt; 0, testConnectionOnCheckin -&gt; false, testConnectionOnCheckout -&gt; false, unreturnedConnectionTimeout -&gt; 0, usesTraditionalReflectiveProxies -&gt; false ] -INFO  -com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource:462 -[Test worker:2175ms]
+ 2016-05-15 20:40:25,492 -HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect -INFO  -org.hibernate.dialect.Dialect:156 -[Test worker:2239ms]
+ 2016-05-15 20:40:25,568 -HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException -INFO  -org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl:124 -[Test worker:2315ms]
+ 2016-05-15 20:40:26,492 -Initializing EhCache CacheManager -INFO  -org.springframework.cache.ehcache.EhCacheManagerFactoryBean:129 -[Test worker:3239ms]
+ 2016-05-15 20:40:26,792 -Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -&gt; 3, acquireRetryAttempts -&gt; 0, acquireRetryDelay -&gt; 1000, autoCommitOnClose -&gt; false, automaticTestTable -&gt; Test, breakAfterAcquireFailure -&gt; false, checkoutTimeout -&gt; 3000, connectionCustomizerClassName -&gt; null, connectionTesterClassName -&gt; com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -&gt; 1hgecjl9g1e2a6vunzj5gq|19d9fd88, debugUnreturnedConnectionStackTraces -&gt; false, description -&gt; null, driverClass -&gt; com.mysql.jdbc.Driver, factoryClassLocation -&gt; null, forceIgnoreUnresolvedTransactions -&gt; false, identityToken -&gt; 1hgecjl9g1e2a6vunzj5gq|19d9fd88, idleConnectionTestPeriod -&gt; 60, initialPoolSize -&gt; 2, jdbcUrl -&gt; jdbc:mysql://localhost:3306/ssh?useUnicode=true&amp;amp;characterEncoding=UTF-8, maxAdministrativeTaskTime -&gt; 0, maxConnectionAge -&gt; 0, maxIdleTime -&gt; 60, maxIdleTimeExcessConnections -&gt; 0, maxPoolSize -&gt; 20, maxStatements -&gt; 100, maxStatementsPerConnection -&gt; 0, minPoolSize -&gt; 2, numHelperThreads -&gt; 3, numThreadsAwaitingCheckoutDefaultUser -&gt; 0, preferredTestQuery -&gt; null, properties -&gt; {user=******, password=******}, propertyCycle -&gt; 0, testConnectionOnCheckin -&gt; false, testConnectionOnCheckout -&gt; false, unreturnedConnectionTimeout -&gt; 0, usesTraditionalReflectiveProxies -&gt; false ]] of Hibernate SessionFactory for HibernateTransactionManager -INFO  -org.springframework.orm.hibernate5.HibernateTransactionManager:357 -[Test worker:3539ms]
+ =====sendAction==========
+=====注入sessionFactory===========
+Hibernate: 
+    insert 
+    into
+        Person
+        (date, name, password, test) 
+    values
+        (?, ?, ?, ?)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.11</a> at 2016-5-15 20:40:30</p>
+</div>
+</div>
+</body>
+</html>
