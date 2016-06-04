@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!--<include file="struts-user.xml"></include>-->
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true"/><!--开发模式-->  
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <package name="default" extends="json-default,struts-default">
+	</package>
+	
+	<package name="send" extends="default">
+			<!-- 请求转发 -->
+		<action name="send_*" class="sendAction">
+			<result>/WEB-INF/{1}.jsp</result>
+		</action>
+		<action name="send_*_*" class="sendAction">
+			<result>/WEB-INF/{1}/{2}.jsp</result>
+		</action>
+		
+	</package>
+	<package name="ooad"  extends="default"> 
+		<action name="guitar_query" class="guitarAction" method="query">
+			<result name="input">/WEB-INF/query.jsp</result>
+			<result name="query">/WEB-INF/query.jsp</result>
+		</action>
+		<action name="guitar_delete" class="guitarAction" method="delete">
+			<result name="input">/WEB-INF/query.jsp</result>
+			<result name="delete" >/WEB-INF/query.jsp</result>
+		</action>
+		<action name="guitar_save" class="guitarAction" method="save">
+			<result name="input">/WEB-INF/query.jsp</result>
+			<result name="save" >/WEB-INF/query.jsp</result>
+		</action>
+	</package>
+</struts>
+ 
