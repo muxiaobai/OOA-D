@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+	http://www.springframework.org/schema/cache
+	http://www.springframework.org/schema/cache/spring-cache-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+	<bean id="baseDaoImpl" abstract="true"  lazy-init="true" p:sessionFactory-ref="sessionFactory" />
+	
+	<bean id="studentDaoImpl" class="DaoImpl.StudentDaoImpl" parent="baseDaoImpl" />
+	<bean id="professorDaoImpl" class="DaoImpl.ProfessorDaoImpl" parent="baseDaoImpl" />
+	<bean id="sectionDaoImpl" class="DaoImpl.SectionDaoImpl" parent="baseDaoImpl" />
+	<bean id="courseDaoImpl" class="DaoImpl.CourseDaoImpl" parent="baseDaoImpl" />
+	<bean id="transcriptEntryDaoImpl" class="DaoImpl.TranscriptEntryDaoImpl" parent="baseDaoImpl" />
+	
+	<bean id="studentServiceImpl" class="ServiceImpl.StudentServiceImpl" p:studentDao-ref="studentDaoImpl"  p:sectionDao-ref="sectionDaoImpl" p:transcriptEntryDao-ref="transcriptEntryDaoImpl"/>
+	<bean id="professorServiceImpl" class="ServiceImpl.ProfessorServiceImpl" p:professorDao-ref="professorDaoImpl"  />
+	<bean id="sectionServiceImpl" class="ServiceImpl.SectionServiceImpl" p:sectionDao-ref="sectionDaoImpl"  p:transcriptEntryDao-ref="transcriptEntryDaoImpl"  />
+	<bean id="courseServiceImpl" class="ServiceImpl.CourseServiceImpl" p:courseDao-ref="courseDaoImpl" />
+	<bean id="transcriptEntryServiceImpl" class="ServiceImpl.TranscriptEntryServiceImpl" p:transcriptEntryDao-ref="transcriptEntryDaoImpl" p:studentDao-ref="studentDaoImpl" p:sectionDao-ref="sectionDaoImpl" />
+
+</beans>
