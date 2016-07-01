@@ -3,25 +3,55 @@ Object-Oriented Analysis &amp; Design 课程设计作业
 
 -------------
 
-## Final Project 说明：[数据库](https://github.com/muxiaobai/OOAD/tree/master/task5/database) ，Spring注入
+## Final Project 说明：SRS为代码文件
 ----------------------------
-##图片运行结果
+#图片运行结果
+##登录
 ![Test](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041015.png "title")
-![](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041017.png "title")
-![](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041020.png "title")
+##显示登录信息
+
+##主页
+![主页](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041017.png "主页")
+##课程查询
+![课程查询](https://github.com/muxiaobai/OOAD/blob/master/task6/201607011958.png "课程查询")
+##选课
+![选课](https://github.com/muxiaobai/OOAD/blob/master/task6/201607011959.png "选课")
+## 我的已选的课
+![选课](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012002.png "选课")
+
+## 代码分析
 -----------------------------
-##代码分析
-###更换文件，修改数据库
-![更换文件修改数据库](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041021.png "title")
+![选课](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012003.png "选课")
+![选课](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012004.png "选课")
+####切换数据库参考
+![切换数据库](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012005.png "切换数据库")
+其他与更换数据库有关的文件可参看[task5切换数据库](https://github.com/muxiaobai/OOAD/tree/master/task5)
+-----------------------------
+##老师课程增删改
+![老师课程增删改](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012001.png "老师课程增删改")
+
+![课程增删改](https://github.com/muxiaobai/OOAD/blob/master/task6/201607011960.png "课程增删改")
+##查看已选的学生
+![课程增删改](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012000.png "课程增删改")
+
+## 已选课程的学生
+![已选课程的学生](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012000.png "老师课程增删改")
+
+## 已选课程的学生
+![老师课程增删改](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012000.png "老师课程增删改")
+
+## 学生的成绩单
+![老师课程增删改](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012000.png "老师课程增删改")
+
+--------------------------------
+##图
+###数据库表
+![数据库表](https://github.com/muxiaobai/OOAD/blob/master/task6/SRS.png "title")
+
+###登录逻辑
 ![更换文件修改数据库](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041022.PNG "title")
-![更换文件修改数据库](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041023.PNG "title")
-###初始化仓库，中间注入IGuitarDao
-![注入](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041024.png "title")
-###init方法中调用IGuitarDao，findAll方法
-![](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041025.png "title")
-###Inventory其他方法
-![Inventory其他方法](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041026.png "title")
-###Inventory其他方法。调用IGuitarDao方法，持久化
-![Inventory其他方法实现](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041021.png "title")
+
+###查询成绩单逻辑
+![更换文件修改数据库](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041022.PNG "title")
 
 --------------
