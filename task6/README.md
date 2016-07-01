@@ -7,11 +7,9 @@ Object-Oriented Analysis &amp; Design 课程设计作业
 ----------------------------
 #图片运行结果
 ##登录
-![Test](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041015.png "title")
+![登录](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012041.png "登录")
 ##显示登录信息
-
-##主页
-![主页](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041017.png "主页")
+![主页](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012042.png "主页")
 ##课程查询
 ![课程查询](https://github.com/muxiaobai/OOAD/blob/master/task6/201607011958.png "课程查询")
 ##选课
@@ -46,12 +44,12 @@ Object-Oriented Analysis &amp; Design 课程设计作业
 --------------------------------
 ##图
 ###数据库表
-![数据库表](https://github.com/muxiaobai/OOAD/blob/master/task6/SRS.png "title")
+![数据库表](https://github.com/muxiaobai/OOAD/blob/master/task6/SRS.png "数据库表")
 
-###登录逻辑
-![更换文件修改数据库](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041022.PNG "title")
+###选课逻辑
+![选课逻辑](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012045.png "选课逻辑")
 
 ###查询成绩单逻辑
-![更换文件修改数据库](https://github.com/muxiaobai/OOAD/blob/master/task5/201606041022.PNG "title")
+![更换文件修改数据库](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012043.png "title")
 
 --------------
