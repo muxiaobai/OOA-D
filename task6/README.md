@@ -3,7 +3,9 @@ Object-Oriented Analysis &amp; Design 课程设计作业
 
 -------------
 
-## Final Project 说明：SRS为代码文件
+## Final Project 说明：SRS为代码文件,
+### UML类图通过一个eclipse插件做的[ModelGoon](http://www.modelgoon.org/),参考网站[将Eclipse中现有的java类生成类图](http://www.it610.com/article/1677574.htm)
+### UML活动图通过[Codeuml](http://www.codeuml.com/)做的
 ----------------------------
 #图片运行结果
 ##登录
@@ -51,5 +53,8 @@ Object-Oriented Analysis &amp; Design 课程设计作业
 
 ###查询成绩单逻辑
 ![更换文件修改数据库](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012043.png "title")
+
+###类图
+![更换文件修改数据库](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012050.png "title")
 
 --------------
