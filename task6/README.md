@@ -22,7 +22,7 @@ Object-Oriented Analysis &amp; Design 课程设计作业
 ![选课](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012003.png "选课")
 ![选课](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012004.png "选课")
 ####切换数据库参考
-![切换数据库](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012005.png "切换数据库")
+![切换数据库](https://github.com/muxiaobai/OOAD/blob/master/task6/201607012008.png "切换数据库")
 其他与更换数据库有关的文件可参看[task5切换数据库](https://github.com/muxiaobai/OOAD/tree/master/task5)
 -----------------------------
 ##老师课程增删改
